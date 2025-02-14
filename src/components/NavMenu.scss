@@ -1,48 +1,48 @@
 .navmenu {
-    padding: 10px;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
+	padding: 10px;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
 
-    img {
-        height: 50px;
-    }
-    .menu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: end;
-        width: 100%;
+	img {
+		height: 50px;
+	}
+	.menu {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: end;
+		width: 100%;
 
-        a {
-            text-decoration: none;
-            color: white;
-            padding: 0 10px;
-            white-space: nowrap;
-        }
-
-        button {
-            background-color: transparent;
-            color: aliceblue;
-            border: none;
-            font-size: 25px;
-            cursor: pointer;
-            // opacity: 0;
-        }
-    }
+		a {
+			text-decoration: none;
+			color: white;
+			padding: 0 10px;
+			white-space: nowrap;
+		}
+	}
+	.btn-menu {
+		background-color: transparent;
+		color: aliceblue;
+		border: none;
+		font-size: 25px;
+        padding: 10px;
+		cursor: pointer;
+	}
 }
 
-.smallmenu{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    padding: 15px;
+.smallmenu {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	padding: 15px;
 
-    a {
-        text-decoration: none;
-        color: white;
-        padding: 10px;
-        white-space: nowrap;
-    }
+	a {
+		text-decoration: none;
+		color: white;
+		padding: 10px;
+		white-space: nowrap;
+	}
 }
