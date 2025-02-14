@@ -32,3 +32,17 @@
         }
     }
 }
+
+.smallmenu{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 15px;
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        white-space: nowrap;
+    }
+}
