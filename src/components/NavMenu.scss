@@ -1,0 +1,34 @@
+.navmenu {
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+
+    img {
+        height: 50px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 0 10px;
+            white-space: nowrap;
+        }
+
+        button {
+            background-color: transparent;
+            color: aliceblue;
+            border: none;
+            font-size: 25px;
+            cursor: pointer;
+            // opacity: 0;
+        }
+    }
+}
