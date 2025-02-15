@@ -26,38 +26,20 @@ const NavMenu = () => {
 	);
 
 	return (
-		<div>
-			<div className="navmenu">
+		<div className="navmenu">
+			<div className="container">
 				<img src={logo} alt="" />
-
-				{size > 550 ? (
-					<ul className="menu">
-						{data.map(({ id, url, text }) => {
-							return (
-								<a key={id} href={url}>
-									{text}
-								</a>
-							);
-						})}
-					</ul>
-				) : (
-					<button onClick={() => setOpenMenu(!openMenu)} className="btn-menu">
-						{FaAlignJustify()}
-					</button>
-				)}
+				<button className="btn-menu"> {FaAlignJustify()}</button>
 			</div>
-
-			{openMenu && size < 550 && (
-				<ul className="smallmenu">
-					{data.map(({ id, url, text }) => {
-						return (
-							<a key={id} href={url}>
-								{text}
-							</a>
-						);
-					})}
-				</ul>
-			)}
+			<ul className="menu">
+				{data.map(({ id, url, text }) => (
+					<li>
+						<a key={id} href={url}>
+							{text}
+						</a>
+					</li>
+				))}
+			</ul>
 		</div>
 	);
 };

@@ -1,50 +1,73 @@
 .navmenu {
+	margin-top: 10px;
 	padding: 10px;
-	background-color: black;
 	display: flex;
 	flex-direction: row;
-    justify-content: space-between;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
 
-	img {
-		height: 50px;
+	.container {
+		img {
+			padding: 5px;
+			width: fit-content;
+			height: 30px;
+		}
+		button {
+			display: none;
+			background-color: transparent;
+			color: aliceblue;
+			border: none;
+			font-size: 20px;
+		}
 	}
-	.menu {
+
+	ul {
+		margin: 0;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		align-items: center;
-		justify-content: end;
-		width: 100%;
-		overflow: hidden;
-
-		a {
-			text-decoration: none;
-			color: white;
-			padding: 0 10px;
-			white-space: nowrap;
+		li {
+			display: inline-block;
+			padding: 10px;
+			a {
+				color: white;
+				text-decoration: none;
+				white-space: nowrap;
+			}
 		}
-	}
-	.btn-menu {
-		background-color: transparent;
-		color: aliceblue;
-		border: none;
-		font-size: 25px;
-        padding: 10px;
-		cursor: pointer;
 	}
 }
 
-.smallmenu {
-	display: flex;
-	margin: 0;
-	flex-direction: column;
-	background-color: black;
-	padding: 15px;
+@media (max-width: 500px) {
+	.navmenu {
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 
-	a {
-		text-decoration: none;
-		color: white;
-		padding: 10px;
-		white-space: nowrap;
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-content: space-between;
+			width: 100%;
+			img {
+			}
+			button {
+				display: inline-block;
+			}
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			li {
+				a {
+				}
+			}
+		}
 	}
 }
