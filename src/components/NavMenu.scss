@@ -1,11 +1,14 @@
+$main-color: rgb(66, 23, 23);
+
 .navmenu {
+	box-sizing: border-box;
 	margin-top: 10px;
 	padding: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background-color: black;
+	background-color: $main-color;
 
 	.container {
 		img {
@@ -41,7 +44,7 @@
 
 @media (max-width: 500px) {
 	.navmenu {
-		background-color: black;
+		background-color: $main-color;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -51,23 +54,31 @@
 			justify-content: space-between;
 			align-content: space-between;
 			width: 100%;
-			img {
-			}
+
 			button {
 				display: inline-block;
+				cursor: pointer;
+				&:active {
+					color: black;
+				}
 			}
 		}
 
-		ul {
+		.nav-list {
 			margin: 0;
 			padding: 0;
+			overflow: hidden;
 			display: flex;
 			flex-direction: column;
 			flex-wrap: nowrap;
-			li {
-				a {
-				}
-			}
+			height: 0px;
+		}
+		.hide {
+			display: none;
+		}
+		
+		.show {
+			height: 150px;
 		}
 	}
 }
